@@ -5,8 +5,6 @@ const lowerWord = word.toLowerCase();
 
 let Arr = lowerWord.split("");
 
-let new_word;
-
 for (let i = 0; i < lowerWord.length; i++) {
 
     if (Arr[i] == 'a') {
@@ -22,7 +20,7 @@ for (let i = 0; i < lowerWord.length; i++) {
     }
 }
 
-new_word = Arr.join('')
+let new_word = Arr.join('')
 
 console.log(new_word)
 
