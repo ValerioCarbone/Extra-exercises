@@ -1,28 +1,25 @@
 
-const word = "Marco";
+let word = "Aiuola";
 
-const lowerWord = word.toLowerCase();
+let new_word = word.toLowerCase();
+// let word = word;
 
-let Arr = lowerWord.split("");
-
-for (let i = 0; i < lowerWord.length; i++) {
-
-    if (Arr[i] == 'a') {
-        Arr.splice(i, 1, 'afa')
-    } else if (Arr[i] == 'e') {
-        Arr.splice(i, 1, 'efe')
-    } else if (Arr[i] == 'i') {
-        Arr.splice(i, 1, 'ifi')
-    } else if (Arr[i] == 'o') {
-        Arr.splice(i, 1, 'ofo')
-    } else if (Arr[i] == 'u') {
-        Arr.splice(i, 1, 'ufu')
-    }
+if (new_word.includes('a')) {
+    new_word = new_word.replaceAll('a', 'afa')
 }
-
-let new_word = Arr.join('')
+if (new_word.includes('e')) {
+    new_word = new_word.replaceAll('e', 'efe')
+}
+if (new_word.includes('i')) {
+    new_word = new_word.replaceAll('i', 'ifi')
+}
+if (new_word.includes('o')) {
+    new_word = new_word.replaceAll('o', 'ofo')
+}
+if (word.includes('u')) {
+    new_word = new_word.replaceAll('u', 'ufu')
+}
 
 console.log(new_word)
 
 
-ABCDEABCDEABCDEABCDE
